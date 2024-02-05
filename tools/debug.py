@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # WRITE YOUR TEST CODE HERE
 
     # Test Author
-    author1 = Author("John Doe")
+    author1 = Author("Moses Doe")
     print(author1.name())
     article1 = author1.add_article(Magazine("Tech Magazine", "Technology"), "Introduction to Python")
     print(author1.articles())
@@ -25,8 +25,9 @@ if __name__ == '__main__':
     print(magazine1.category())
     print(magazine1.contributors())
     print(Magazine.find_by_name("Tech Magazine"))
+    print(magazine1.contributors()) 
     print(Magazine.article_titles(magazine1))  
-    print(Magazine.contributing_authors(magazine1)) 
+  
 
     # Test Article
     print(article1.title())
