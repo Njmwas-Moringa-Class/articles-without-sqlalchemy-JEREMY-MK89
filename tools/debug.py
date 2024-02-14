@@ -14,11 +14,15 @@ if __name__ == '__main__':
     # Test Author
     author1 = Author("Moses Doe")
     print(author1.name())
-    article1 = author1.add_article(Magazine("Tech Magazine", "Technology"), "Introduction to Python")
+
+    # Create a Magazine instance
+    tech_magazine = Magazine("Tech Magazine", "Technology")
+
+    article1 = author1.add_article(tech_magazine, "Introduction to Python")
     print(author1.articles())
     print(author1.magazines())
     print(author1.topic_areas())
-
+ 
     # Test Magazine
     magazine1 = Magazine("Tech Magazine", "Technology")
     print(magazine1.name())

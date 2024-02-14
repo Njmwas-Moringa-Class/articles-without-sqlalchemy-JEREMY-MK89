@@ -1,14 +1,11 @@
-
 class Article:
-    all_articles = []
+    _all_articles = []
 
     def __init__(self, author, magazine, title):
         self._author = author
         self._magazine = magazine
         self._title = title
-        Article.all_articles.append(self)
-        author.articles().append(self)
-        magazine._articles.append(self)
+        Article._all_articles.append(self)
 
     def title(self):
         return self._title
@@ -21,4 +18,5 @@ class Article:
 
     @classmethod
     def all(cls):
-        return cls.all_articles
+        return cls._all_articles
+    
